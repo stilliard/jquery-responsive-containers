@@ -9,7 +9,7 @@ Why only temp? because i hope the CSS working group will work out a better CSS i
 The end jquery.responsive-containers.min.js contains both the jquery-responsive-containers plugin and the jquery-resize plugin for simplicity, but you can easily split them out if needed.
 
 
-Example
+Examples
 ---------
 Min width with a class name addition
 
