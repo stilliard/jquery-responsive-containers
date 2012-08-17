@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Responsive Containers Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>jQuery Responsive Containers Demo</h1>
+        <p>For now to test you can resize your browser window, or use your browsers developer tools to change the body width to see the effects. <em>(I will add some simple js controls at some point)</em></p>
+    </header>
+
+    <section class="demo-container">
+
+        <p>The following div should change color on resize at 400px and 800px</p>
+        
+        <div id="demo-1">DEMO</div>
+
+    </section>
+
+    <script src="lib/jquery-1.8.0.min.js"></script>
+    <script src="lib/jquery.ba-resize.min.js"></script>
+    <script src="../src/jquery.responsive-containers.js"></script>
+
+    <script>
+    jQuery(document).ready(function () {
+
+        // first demo
+        $('#demo-1').responsiveContainer({
+            feature: 'min-width',
+            value: '800px',
+            className: 'demo1-large'
+        });
+
+        $('#demo-1').responsiveContainer({
+            feature: 'max-width',
+            value: '400px',
+            className: 'demo1-small'
+        });
+
+    });
+    </script>
+
+</body>
+</html>
