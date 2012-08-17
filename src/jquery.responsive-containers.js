@@ -3,7 +3,7 @@
  * https://github.com/stilliard/jquery-responsive-containers
  *
  */
- (function ($) {
+(function ($) {
     "use strict";
 
     // setup some default / example settings
