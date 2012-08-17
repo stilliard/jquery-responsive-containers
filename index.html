@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Jquery-responsive-containers : jquery responsive containers - a jquery plugin for adapting layouts / modules based on widths" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Jquery-responsive-containers</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/stilliard/jquery-responsive-containers">View on GitHub</a>
+
+          <h1 id="project_title">Jquery-responsive-containers</h1>
+          <h2 id="project_tagline">jquery responsive containers - a jquery plugin for adapting layouts / modules based on widths</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/stilliard/jquery-responsive-containers/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/stilliard/jquery-responsive-containers/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>jQuery Responsive Containers (Also known as selector queries)</h1>
+
+<p>We have media queries, hooray, but what about a way to pass modules around and have them respond / adapt to where the person puts them on a page, what if there added to a large space, or a small sidebar. And in turn, what happens when that page responds and elements around it change causing its container width to change?
+Well, this plugin was a quick way to hopefully solve that problem for a temp basis.
+Why only temp? because i hope the CSS working group will work out a better CSS implementation at some point, it really is needed if web app mashups are to be responsive.</p>
+
+<p>This plugin is very simple in what it does, and mainly wraps the jquery-resize plugin with a nice way to use it to make responsive containers.</p>
+
+<p>The end jquery.responsive-containers.min.js contains both the jquery-responsive-containers plugin and the jquery-resize plugin for simplicity, but you can easily split them out if needed.</p>
+
+<h2>Examples</h2>
+
+<p>Min width with a class name addition</p>
+
+<pre><code>$('.myModule').responsiveContainer({
+    feature: 'min-width',
+    value: '800px',
+    className: 'myModule-large'
+});
+</code></pre>
+
+<p>Max width with a class name addition</p>
+
+<pre><code>$('.myModule').responsiveContainer({
+    feature: 'max-width',
+    value: '400px',
+    className: 'myModule-small'
+});
+</code></pre>
+
+<p>Max width with a custom callback</p>
+
+<pre><code>$('.myModule').responsiveContainer({
+    feature: 'max-width',
+    value: '400px',
+    callback: function (data) {
+        console.log(data);
+    }
+});
+</code></pre>
+
+<h2>Credits</h2>
+
+<p><a href="http://jquery.com/">jQuery</a></p>
+
+<p><a href="https://github.com/cowboy/jquery-resize">jquery-resize</a></p>
+
+<p>Inspired somewhat by Andy Humes article on <a href="http://blog.andyhume.net/responsive-containers/">Responsive Containers</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Jquery-responsive-containers maintained by <a href="https://github.com/stilliard">stilliard</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
