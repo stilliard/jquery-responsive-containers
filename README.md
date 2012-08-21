@@ -10,6 +10,7 @@ This plugin is very simple in what it does, and mainly wraps the jquery-resize p
 
 The end jquery.responsive-containers.min.js contains both the jquery-responsive-containers plugin and the jquery-resize plugin for simplicity, but you can easily split them out if needed.
 
+Demo's coming soon! For now there is a demo in the code so if you checkout the latest code and run firefox ./demo/index.html you can have a quick play.
 
 Examples
 ---------
