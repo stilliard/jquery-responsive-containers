@@ -50,3 +50,7 @@ Credits
 
 Inspired somewhat by Andy Humes article on [Responsive Containers](http://blog.andyhume.net/responsive-containers/)
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/stilliard/jquery-responsive-containers/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
