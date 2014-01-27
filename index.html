@@ -1,37 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Jquery-responsive-containers : jquery responsive containers - a jquery plugin for adapting layouts / modules based on widths" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jquery-responsive-containers by stilliard</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Jquery-responsive-containers</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Jquery-responsive-containers</h1>
+        <p class="header">jquery responsive containers - a jquery plugin for adapting layouts / modules based on widths</p>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/stilliard/jquery-responsive-containers">View on GitHub</a>
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/stilliard/jquery-responsive-containers/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/stilliard/jquery-responsive-containers/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/stilliard/jquery-responsive-containers">View On GitHub</a></li>
+        </ul>
 
-          <h1 id="project_title">Jquery-responsive-containers</h1>
-          <h2 id="project_tagline">jquery responsive containers - a jquery plugin for adapting layouts / modules based on widths</h2>
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/stilliard">stilliard</a></p>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/stilliard/jquery-responsive-containers/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/stilliard/jquery-responsive-containers/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>jQuery Responsive Containers (Also known as selector queries)</h1>
+      </header>
+      <section>
+        <h1>
+<a name="jquery-responsive-containers-also-known-as-selector-queries" class="anchor" href="#jquery-responsive-containers-also-known-as-selector-queries"><span class="octicon octicon-link"></span></a>jQuery Responsive Containers (Also known as selector queries)</h1>
 
 <p>We have media queries, hooray, but what about a way to pass modules around and have them respond / adapt to where the person puts them on a page, what if there added to a large space, or a small sidebar. And in turn, what happens when that page responds and elements around it change causing its container width to change?
 Well, this plugin was a quick way to hopefully solve that problem for a temp basis.
@@ -41,7 +41,8 @@ Why only temp? because i hope the CSS working group will work out a better CSS i
 
 <p>The end jquery.responsive-containers.min.js contains both the jquery-responsive-containers plugin and the jquery-resize plugin for simplicity, but you can easily split them out if needed.</p>
 
-<h2>Examples</h2>
+<h2>
+<a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h2>
 
 <p>Min width with a class name addition</p>
 
@@ -72,7 +73,8 @@ Why only temp? because i hope the CSS working group will work out a better CSS i
 });
 </code></pre>
 
-<h2>Credits</h2>
+<h2>
+<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h2>
 
 <p><a href="http://jquery.com/">jQuery</a></p>
 
@@ -80,29 +82,11 @@ Why only temp? because i hope the CSS working group will work out a better CSS i
 
 <p>Inspired somewhat by Andy Humes article on <a href="http://blog.andyhume.net/responsive-containers/">Responsive Containers</a></p>
       </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Jquery-responsive-containers maintained by <a href="https://github.com/stilliard">stilliard</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
     </div>
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-32147348-2']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
   </body>
 </html>
